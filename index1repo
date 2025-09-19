@@ -1,1 +1,97 @@
+import React from 'react'
+import logo from '../../owl-logo.webp'
+import { Link } from 'react-router-dom';
+
+export default function Navbar() {
+
+  const isCourseListPage = location.pathname.includes('/course-list');
+
+  return (
+    <div className={`flex items-center justify-between px-4 sm:px-10 md:px-14 lg:px-36 border-b border-gray-500 py-4 ${
+				isCourseListPage ? "bg-white" : "bg-cyan-100/70"
+			} `}
+    >
+      {/* <img
+				src={logo}
+				alt="Logo"
+				className="w-28 lg:w-32 cursor-pointer"
+			/> */}
+      <div className='hidden md: flex items-center gap-5 text-gray-500'>
+        <div>
+          <button>Become Instructor</button> | <Link to='/my-enrollments'>My Enrollments</Link>
+        </div>
+        <button className='bg-blue-600 text-white px-5 py-2 rounded-full'>Create Account</button>
+      </div>
+
+    </div>
+  )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+import './App.css'
+import { Route, Routes, useMatch } from 'react-router-dom'
+import Home from './pages/students/Home'
+import CourseDetails from './pages/students/CourseDetails'
+import MyEnrollments from './pages/students/MyEnrollments'
+import CourseList from './pages/students/CourseList'
+import Player from './pages/students/Player'
+import Loading from './components/students/Loading'
+import Instructor from './pages/instructors/Instructor'
+import Dashboard from './pages/instructors/Dashboard'
+import AddCourse from './pages/instructors/AddCourse'
+import MyCourses from './pages/instructors/MyCourses'
+import StudentsEnrolled from './pages/instructors/StudentsEnrolled'
+import Navbar from './components/students/Navbar'
+
+
+
+
+
+
+
+
+
+
+
+
+function App() {
+
+  const isInstructorRoute = useMatch('/instructor/*')
+
+  return (
+    <div className='text default min-h-screen bg-white'>
+      {!isInstructorRoute && <Navbar />}
+      <Routes>
+        <Route path = '/' element={<Home />} />
+        <Route path = '/course-list' element={<CourseList />}/>
+        <Route path = '/course-list/:input' element={<CourseList />}/>
+        <Route path = '/course/:id' element={<CourseDetails />}/>
+        <Route path = '/my-enrollments' element={<MyEnrollments />} />
+        <Route path = '/player/:courseId' element={<Player />}/>
+        <Route path = '/loading/:path' element={<Loading />}/>
+        <Route path = '/instructor' element={<Instructor />}>
+          <Route path = 'instructor' element={<Dashboard />}/>
+          <Route path = 'add-course' element={<AddCourse />}/>
+          <Route path = 'my-courses' element={<MyCourses />}/>
+          <Route path = 'student-enrolled' element={<StudentsEnrolled />}/>
+
+
+        </Route>        
+      </Routes>
+    </div> 
+  )
+}
+
+export default App
+
 
