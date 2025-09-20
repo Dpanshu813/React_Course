@@ -77,3 +77,184 @@ export default App
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "courses": [
+    {
+      "EnrollmentID": "E001",
+      "StudentID": "S001",
+      "CourseID": "C001",
+      "title": "Learn Figma from Basic",
+      "instructor": "purepearl studio",
+      "lessons": 17,
+      "duration": "2h 16m",
+      "students": "850+",
+      "price": "$50.00/lifetime",
+      "image": "/images/Figma-Image.jpg",
+      "progress": "20%"
+    },
+    {
+      "EnrollmentID": "E002",
+      "StudentID": "S002",
+      "CourseID": "C002",
+      "title": "Web Development Bootcamp",
+      "instructor": "devhub",
+      "lessons": 28,
+      "duration": "4h 10m",
+      "students": "2.1K+",
+      "price": "$75.00/lifetime",
+      "image": "/images/web-dev.jpg",
+      "progress": "35%"
+    },
+    {
+      "EnrollmentID": "E003",
+      "StudentID": "S003",
+      "CourseID": "C003",
+      "title": "Webflow for Beginners",
+      "instructor": "finvision",
+      "lessons": 25,
+      "duration": "3h 30m",
+      "students": "1.4K+",
+      "price": "$60.00/lifetime",
+      "image": "/images/webflow.webp",
+      "progress": "15%"
+    },
+    {
+      "EnrollmentID": "E004",
+      "StudentID": "S004",
+      "CourseID": "C004",
+      "title": "Python for Data Science",
+      "instructor": "dataschool",
+      "lessons": 40,
+      "duration": "5h 20m",
+      "students": "5K+",
+      "price": "$80.00/lifetime",
+      "image": "/images/python.jpg",
+      "progress": "50%"
+    },
+    {
+      "EnrollmentID": "E005",
+      "StudentID": "S005",
+      "CourseID": "C005",
+      "title": "Machine Learning A-Z",
+      "instructor": "mlmasters",
+      "lessons": 60,
+      "duration": "8h 45m",
+      "students": "3.2K+",
+      "price": "$120.00/lifetime",
+      "image": "/images/ml.jpg",
+      "progress": "70%"
+    },
+    {
+      "EnrollmentID": "E006",
+      "StudentID": "S006",
+      "CourseID": "C006",
+      "title": "React JS Complete Guide",
+      "instructor": "frontendpro",
+      "lessons": 32,
+      "duration": "6h 10m",
+      "students": "4.5K+",
+      "price": "$90.00/lifetime",
+      "image": "/images/react.png",
+      "progress": "40%"
+    },
+    {
+      "EnrollmentID": "E007",
+      "StudentID": "S007",
+      "CourseID": "C007",
+      "title": "Node.js & Express Fundamentals",
+      "instructor": "backendhub",
+      "lessons": 27,
+      "duration": "4h 50m",
+      "students": "2.7K+",
+      "price": "$70.00/lifetime",
+      "image": "/images/node.png",
+      "progress": "25%"
+    },
+    {
+      "EnrollmentID": "E008",
+      "StudentID": "S008",
+      "CourseID": "C008",
+      "title": "SQL & Databases for Beginners",
+      "instructor": "dbacademy",
+      "lessons": 22,
+      "duration": "3h 40m",
+      "students": "1.9K+",
+      "price": "$55.00/lifetime",
+      "image": "/images/sql.webp",
+      "progress": "10%"
+    },
+    {
+      "EnrollmentID": "E009",
+      "StudentID": "S009",
+      "CourseID": "C009",
+      "title": "Cloud Computing with AWS",
+      "instructor": "cloudmasters",
+      "lessons": 35,
+      "duration": "7h 15m",
+      "students": "3.8K+",
+      "price": "$95.00/lifetime",
+      "image": "/images/aws-logo-scaled.jpg",
+      "progress": "65%"
+    },
+    {
+      "EnrollmentID": "E103",
+      "StudentID": "S010",
+      "CourseID": "C010",
+      "title": "AWS Certified SysOps Administrator",
+      "instructor": "opsacademy",
+      "lessons": 33,
+      "duration": "8h 05m",
+      "students": "3.4K+",
+      "price": "$115.00/lifetime",
+      "image": "/images/aws-adm.jpg",
+      "progress": "20%"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
+export default function CourseCard({ course }) {
+  const navigate = useNavigate();
+
+  return (
+    <div
+      onClick={() => navigate(`/course/${course.CourseID}`)}
+      className="bg-white shadow-lg rounded-2xl p-4 hover:shadow-xl transition cursor-pointer"
+    >
+      <img
+        src={course.image}
+        alt={course.title}
+        className="w-full h-40 object-cover rounded-xl mb-3"
+      />
+      <h3 className="text-lg font-semibold">{course.title}</h3>
+      <p className="text-gray-500 text-sm">{course.instructor}</p>
+      <p className="text-indigo-600 font-bold mt-2">{course.price}</p>
+    </div>
+  );
+}
+
+
+
+
