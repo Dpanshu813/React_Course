@@ -11,30 +11,19 @@ export default function Navbar() {
 				isCourseListPage ? "bg-white" : "bg-cyan-100/70"
 			} `}
     >
-      {/* <img
-				src={logo}
-				alt="Logo"
-				className="w-28 lg:w-32 cursor-pointer"
-			/> */}
-      <div className='hidden md: flex items-center gap-5 text-gray-500'>
+      <img
+      src = {logo} alt = "Logo" className='w-26 lg:w-12 cursor-pointer' />
+      
+      <div className='hidden md:flex items-center gap-5 text-gray-500 '>
         <div>
-          <button>Become Instructor</button> | <Link to='/my-enrollments'>My Enrollments</Link>
+          <button className='cursor-pointer'>Become Instructor</button> | <Link to='/my-enrollments'>My Enrollments</Link>
         </div>
-        <button className='bg-blue-600 text-white px-5 py-2 rounded-full'>Create Account</button>
+        <button className='bg-blue-600 text-white px-5 py-2 rounded-full cursor-pointer'>Create Account</button>
       </div>
 
     </div>
   )
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -56,14 +45,6 @@ import Navbar from './components/students/Navbar'
 
 
 
-
-
-
-
-
-
-
-
 function App() {
 
   const isInstructorRoute = useMatch('/instructor/*')
@@ -80,7 +61,7 @@ function App() {
         <Route path = '/player/:courseId' element={<Player />}/>
         <Route path = '/loading/:path' element={<Loading />}/>
         <Route path = '/instructor' element={<Instructor />}>
-          <Route path = 'instructor' element={<Dashboard />}/>
+          <Route index element={<Dashboard />}/>
           <Route path = 'add-course' element={<AddCourse />}/>
           <Route path = 'my-courses' element={<MyCourses />}/>
           <Route path = 'student-enrolled' element={<StudentsEnrolled />}/>
@@ -93,5 +74,6 @@ function App() {
 }
 
 export default App
+
 
 
