@@ -1,0 +1,269 @@
+Project Related Questions
+Show me Your Project flow
+What is Your module and others module?
+Have you followed agile ,What is your daily activities/task
+What is your Project architecture?
+Have you implemented Validation in your Application
+How you handle exception?
+How you handle unit testing
+How you handle Coding Standards
+What is the benefit your application
+What is the drawback or limitations that you want to work upon in future?
+What is Design Pattern can you give me some name
+What is Singlton/Factory write code  and Explain?
+What is Solid Principle have you used in your project?
+Have you used Microservice in you Project if yes then how?
+Have you deployed your application
+ 
+Java
+OOPS
+ 
+Can I have run and compile my class without main method
+What is psvm and sop
+What is jre jdk jvm
+What OOPS 10 Fetures
+Can I make my class private or protected or static
+Can I override constructor and static method in child
+MOL vs MOR
+Can I reduce the accessibility in child class
+What is Static
+Abstract class vs interface
+2. Exception Handling
+Exception vs Error
+Checked vs Error
+Throw vs throws
+Use of Finally
+Custom exception (code)
+ 
+                 3. File Handling/IO
+How we can read and write text/binary file?
+What is sterilization/markable interface, transient (Code)
+Thread vs Process
+ 
+                4.Multithreading
+Runnable(Code) vs Thread(Code) vs Callable
+Synchronization(Code)
+What is the drawback of Syncronization how we can overcome
+What is interthread communication
+What is executer Farmwork
+What is Thread Pool
+How many ways I can block my thread?
+What is thread priority
+Why wait notify notifyall is not in Thread class
+  5.Collection Farmwork
+ArrayList
+linkedList
+vector
+Hashset
+linkedHashset
+TreeSet
+HashMap
+LinkedHashMap
+TreeMap
+Hashtable
+Points on above classes
+Underlying ds
+Delicacy
+Insertion order
+Heterogeneous
+Null
+Default capacity(formula used)
+Best Suitable Operation(Where to use)
+ 
+Questions
+ 
+Can u insert duplicate in Hasset/hashmap if yes then what happens
+Can u insert null in TreeSet/TreeMap if yes then what happens
+Can u insert hetroginius in treeset/treemap if yes then what happens
+Can u insert null in hashtable if yes then what happens
+Internal working of HashMap/Hashtable
+Internal working HashSet/TreeSet
+Equals and Hashcode contract
+Comprable vs comprator
+HashSet vs LinkedHashSet/TreeSet
+Hashmap vs LinkedHashMap/TreeMap/HashTable
+ArrayList vs Vector/LinkedList
+Iterator vs Listiterator vs enumeration
+I have a List of Number I want Uniqe with Order Insertion Order and Asc/Dsc (code)
+Stack and Quue
+You know Concurrent Collection
+ 
+Java 8
+What are main features of Java 8 why java 8 is require
+Functional Interface (Pont & Code)
+Lamda Function/Expression (Pont & Code)
+Method references(Pont and Code)
+Stream API (Integer/String/Object)
+Why Static Method  in interface
+Why default method in interface
+What is Optional class
+What Date Time API what is the need it was already there before
+What is String Joiner
+What is Parral sort?
+Do you know Some other new features after Java 8
+Reactive Programming
+ 
+flatmap
+ 
+ 
+ 
+Database
+What is MySQL ACID and Normalization
+20/25 Basic Query in MySQL(DDL,DML,DCL,TCL)
+Drop vs delete vs truncate
+Order By Group By Having Distinct and Aggregate  Functions like count sum avg..
+Constraints and Differences primary key null and foreign key
+Joins
+What is the difference between SQL vs NO SQL
+ 
+Spring
+What is Spring why we need of it?
+Difference b/w is IOC and DI
+Difference b/w is Bean Factory and DI?
+Difference b/w Application Context v/s Bean Factory?
+How many way I can configure my bean
+Life cycle of Bean in Spring
+Scope of Bean ?
+What are the basic Spring Annotations?
+ 
+@Autowaire
+@Qualifier
+@Primary
+@Component
+@ComponentScan
+@Configuration
+@Bean
+@Value
+@PropertyDeatils
+@Scope (Singlton/Prototype)
+@PostConstruct
+@PreDestroy
+ 
+Spring JDBC
+How you connect JDBC with Spring
+Spring MVC
+What is the flow of Spring MVC( Dispatcher Servlet & View Resolver)
+Model, ModelMap, ModelAndView in Spring MVC
+Spring AOP
+What is Spring AOP?
+10 Terminologies in Spring AOP?
+Difference between Concern and Cross-cutting Concern in Spring AOP?
+What are the Available AOP Implementations in Java?
+What are the Different Types of Advices?
+What is Spring AOP Proxy?
+What are Introductions in Spring AOP?
+What are Join points and Point cuts?
+What is Weaving?
+How to Implement AOP in Spring Boot?
+Can We Define Ordering of the Multiple Aspects?
+ 
+Spring Boot FAQ
+What is Spring Boot and its Advantages/Features/Disadvantages?
+How does a spring application get started?
+Or Internal working of Spring Boot?
+Difference between Spring MVC and Spring Boot?
+Can we disable the default web server in the Spring Boot application?
+Can we create a non-web application in Spring Boot?
+How many ways can I create Spring Boot Applications?
+What is the default port of Tomcat in spring boot?
+Can we disable the default web server in the Spring Boot application?
+How to disable a specific auto-configuration class?
+ 
+Key Components of Spring Boot?
+What are the Spring Boot Starter Dependencies?
+What are Profiles in Spring?
+What is the difference b/s
+What is Spring Boot Actuator?
+What are the basic Spring Boot Annotations?
+ 
+Spring Boot Related
+@SpringBootApplication
+@EnableAutoConfiguration
+@Configuration
+@ComponentScan
+ 
+@RestController
+@Controller
+@Component
+ 
+@RequestMaping
+@RequestParameter
+@PathVareable
+@RequestBody
+@ResponseBody
+ 
+@GetMapping
+@PutMapping
+@PatchMapping
+@DeleteMapping
+@PostMapping
+ 
+@Service (What if I don’t use)
+@Repository(What if I don’t use)
+ 
+ JPA Related(Hibernate)
+@Entity
+@Id
+@GeneratedValue
+@Table
+@Collumn
+ 
+ Lombok Related
+@Data
+@AllargsConstructor
+@NoArgConstructor
+@Setter
+@Getter
+@toString
+@Equals
+@hashcode
+Data JPA
+ 
+What is Data JPA
+What is the Different Crud Repository and JPA Repository?
+What is strategy
+What is Mapping
+What is JPQL
+What is Custom Query(Question may come in different way)?
+ 
+Spring Security v/s JWT
+What is Spring Security how we can configure?
+What is JWT ?
+What is the difference b/w JWT and Spring Security
+DTO Validation Exception and Unit Testing
+What is DTO what is the benefit to use it in Spring Boot Applications
+How to Perform validations in Spring Boot Applications
+How to Handle Exception in Spring Boot Application?
+What is Junit & Mockito?
+How to Handle Unit Testing in Spring Boot Application?
+ 
+Rest API
+Do you know webservice types of Webservice?
+Difference b/w API and Rest API
+Difference b/w posman swagger and other tool like thunder in vs code
+What is the status code in Rest API
+What is the defferance b/w put and patch
+What is the defferance b/w put and post
+Can you show me how to post a record using postman/swagger
+Versions of Technology ur using
+Microservice
+Difference b/w Microservice and Monolithic
+Limitation and advantage of microservice
+What is Synchronous communication like Rest Template and Feign Client/Web client
+What is API gateway?
+What is Asynchronous communication like Kafka and rabit MQ
+What is Fault Tolerance in Microservice and what is Hystrix and reslance4 J
+What is config Server
+What is web flux
+What is Spring Cloud
+Tell me some design pattern use in microservices
+AWS and Cloudcomputing
+Ec2
+Docker
+K8s
+Sonar Cube
+Git
+Maven
+Junit
+Mockito
+Jenkins
